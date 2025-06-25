@@ -1,21 +1,37 @@
 MIT License
 
-Copyright (c) 2023 Ala Gowtham Siva Kumar
+Copyright (c) 2025 Benugu tejaswi
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+It’s hard to go wrong with the MIT License if you’re starting with a blank slate. It’s short, easily understood, and allows anyone to do anything so long as they keep a copy of the license, including your copyright notice. You’ll be able to release the project under a different license if you ever need to.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Otherwise, picking the right open source license for your project depends on your objectives.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Your project very likely has (or will have) dependencies, each of which will have its own open source license with terms you have to respect. For example, if you’re open sourcing a Node.js project, you’ll probably use libraries from the Node Package Manager (npm).
+
+Dependencies with permissive licenses like MIT, Apache 2.0, ISC, and BSD allow you to license your project however you want.
+
+Dependencies with copyleft licenses require closer attention. Including any library with a “strong” copyleft license like the GPLv2, GPLv3, or AGPLv3 requires you to choose an identical or compatible license for your project. Libraries with a “limited” or “weak” copyleft license like the MPL 2.0 and LGPL can be included in projects with any license, provided you follow the additional rules they specify.
+
+Dependencies with source-available licenses, such as the Business Source License BSL or the Server Side Public License SSPL, may appear to be under open source licenses but come with usage and business model restrictions. These restrictions may prevent your project from being considered Open Source as defined by the Open Source Initiative (OSI).
+
+Projects often rely on non-source code content, such as images, icons, videos, fonts, data files, or other materials, which are governed by their own licenses. As with traditional software dependencies, the licenses these materials range from Commercial to permissive to Copyleft. The Creative Commons, a non-profit organization, created a series of licenses popular for non-source content. Creative Commons licenses range from very permissive CC0 to Permissive CC-BY to copyleft CC-SA. They also can sometime restrict commercial use by adding a non-commercial (NC) option to these licenses. You may also want to consider the communities you hope will use and contribute to your project:
+
+Do you want your project to be used as a dependency by other projects? Probably best to use the most popular license in your relevant community. For example, MIT is the most popular license for npm libraries.
+Do you want your project to appeal to large businesses? A large business may be comforted by an express patent license from all contributors. In this case, the Apache 2.0 has you (and them) covered.
+Do you want your project to appeal to contributors who do not want their contributions to be used in closed source software? GPLv3 or (if they also do not wish to contribute to closed source services) AGPLv3 will go over well.
+Your company may have policies for open source project licensing. Some companies require your projects to bear a permissive license to permit integration with the company’s proprietary products. Other policies enforce a strong copyleft license and an additional contributor agreement (see below) so only your company can use the project in closed source software. Organizations may also have certain standards, social responsibility goals, or transparency needs which could require a particular licensing strategy. Talk to your company’s legal department for guidance.
+
+When you create a new project on GitHub, you are given the option to select a license. Including one of the licenses mentioned above will make your GitHub project open source. If you’d like to see other options, check out choosealicense.com to find the right license for your project, even if it isn’t software.
+
+What if I want to change the license of my project?
+Most projects never need to change licenses. But occasionally circumstances change.
+
+For example, as your project grows it adds dependencies or users, or your company changes strategies, any of which could require or want a different license. Also, if you neglected to license your project from the start, adding a license is effectively the same as changing licenses. There are three fundamental things to consider when adding or changing your project’s license:
+
+It’s complicated. Determining license compatibility and compliance and who holds copyright can get complicated and confusing very quickly. Switching to a new but compatible license for new releases and contributions is different from relicensing all existing contributions. Involve your legal team at the first hint of any desire to change licenses. Even if you have or can obtain permission from your project’s copyright holders for a license change, consider the impact of the change on your project’s other users and contributors. Think of a license change as a “governance event” for your project that will more likely go smoothly with clear communications and consultation with your project’s stakeholders. All the more reason to choose and use an appropriate license for your project from its inception!
+
+Your project’s existing license. If your project’s existing license is compatible with the license you want to change to, you could just start using the new license. That’s because if license A is compatible with license B, you’ll comply with the terms of A while complying with the terms of B (but not necessarily vice versa). So if you’re currently using a permissive license (e.g., MIT), you could change to a license with more conditions, so long as you retain a copy of the MIT license and any associated copyright notices (i.e., continue to comply with the MIT license’s minimal conditions). But if your current license is not permissive (e.g., copyleft, or you don’t have a license) and you aren’t the sole copyright holder, you couldn’t just change your project’s license to MIT. Essentially, with a permissive license the project’s copyright holders have given permission in advance to change licenses.
+
+Your project’s existing copyright holders. If you’re the sole contributor to your project then either you or your company is the project’s sole copyright holder. You can add or change to whatever license you or your company wants to. Otherwise there may be other copyright holders that you need agreement from in order to change licenses. Who are they? People who have commits in your project is a good place to start. But in some cases copyright will be held by those people’s employers. In some cases people will have only made minimal contributions, but there’s no hard and fast rule that contributions under some number of lines of code are not subject to copyright. What to do? It depends. For a relatively small and young project, it may be feasible to get all existing contributors to agree to a license change in an issue or pull request. For large and long-lived projects, you may have to seek out many contributors and even their heirs. Mozilla took years (2001-2006) to relicense Firefox, Thunderbird, and related software.
+
+Alternatively, you can have contributors pre-approve certain license changes via an additional contributor agreement (see below). This shifts the complexity of changing licenses a bit. You’ll need more help from your lawyers up front, and you’ll still want to clearly communicate with your project’s stakeholders when executing a license change.
