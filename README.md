@@ -1,6 +1,4 @@
-# PROJECT
-# Project Title
-## Description
-## How to Run
-## Files Included
-## Author Info
+## Coursera IBM  Getting started with Git and Github week 3 final project
+
+### Authors
+Tejaswi benugu
